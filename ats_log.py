@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 # Description: example netdata python.d module
-# Author: Put your name here (your github login)
+# Author: JackGlobetrotter (JackGlobetrotter)
 # SPDX-License-Identifier: GPL-3.0-or-later
+
 import os
 import re
 from bases.FrameworkServices.LogService import LogService
@@ -38,8 +39,6 @@ CHARTS = {
         ]
     }    
 }
-
-
 
 class Service(LogService):
     def __init__(self, configuration=None, name=None):
@@ -81,10 +80,7 @@ class Service(LogService):
         raw_data = self._get_raw_data()
         if not raw_data:
             return None
-       
-
-      
-
+        
         for row in raw_data:
             pass
 
